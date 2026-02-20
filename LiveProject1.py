@@ -71,7 +71,9 @@ driver.switch_to.alert.dismiss() # it will dismiss the popup
 
 #MouseOver
 action = ActionChains(driver)
-action.move_to_element(driver.find_element(By.ID, "mousehover")).perform()
+action.move_to_element(driver.find_element(By.ID, "mousehover")).perform() #Mouse moveover
+# action.double_click("Xpath").perform() #for double click
+# action.context_click("Xpath").perform()  #for Rightclick
 time.sleep(4)
 
 #frames

@@ -1,6 +1,5 @@
 import time
 from selenium import webdriver
-from selenium.webdriver import Keys
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -38,8 +37,3 @@ driver.find_element(By.XPATH, "//input[@type='checkbox']").click() #agreeing ter
 driver.find_element(By.XPATH, "//button[text()='Proceed']").click() #it will click on proceed to place order
 
 
-
-
-
-
-time.sleep(8)
