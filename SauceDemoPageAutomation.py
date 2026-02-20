@@ -39,22 +39,5 @@ driver.find_element(By.XPATH, "//a[text()='Logout']").click()
 
 assert "saucedemo" in driver.current_url
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 time.sleep(5)
-
 
