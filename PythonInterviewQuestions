@@ -1,0 +1,114 @@
+What is the difference between a list and a tuple?
+-------------------------------------------------
+List: It is the one of the datatype in python and stores multiple collections of items
+      It defines by []
+      It is mutable which means we can update, change or modify
+
+Tuple:It is the one of the datatype in python and stores multiple collections of items
+      It defines by ()
+      It is immutable which means we cannot update, change or modify
+
+What are Python’s built-in data types?
+--------------------------------------
+int, float, list[], tuple(), dict{}, string, boolean
+
+How do you implement inheritance and super keyword in Python?
+-------------------------------------------------------------
+Inheritance: Acquiring the properties(Methods and functions) of parent class into child class is called Inheritance
+super() : It is used to call the parent methods with in the child class
+
+What is init() in python?
+------------------------
+It is a constructor for the class in OOB. It is automatically created when class is created
+This method is automatically called when a new instance of class is created.
+
+How do you read and write files in Python?
+------------------------------------------
+In Python we will write anything in the file
+    with open("path", "w") as f
+    f.write("hello World")
+
+    with open("path", "r") as f
+    f.read()
+
+What are Fixtures in Pytest? when they are used?
+------------------------------------------------
+Fixtures are used to setup browser and teardown..
+Fixtures are also functions in python
+Fixtures are used to reusability of code
+
+How do you use yield for WebDriver Setup and Teardown in pytest?
+----------------------------------------------------------------
+In framework yield in used inside the fixture to separate setup and teardown logic
+
+How do you create a list of dictionaries in Python?
+--------------------------------------------------
+a = [{"name":"alice"}, {"age":"20"}, {"place":"Hyd"}, {"name":"Bob"}, {"age":23}, {"place":"Hyd1"} ]
+It looks like a json
+print(a[0]["name"])
+Alice
+
+What is lambda function in Python?
+----------------------------------
+A lambda function is an anonymous function (which does not have name for that function)
+It is a single line function, it can have multiple args
+it is used for temporary whenever we needed
+add = lamba x, y: x+y
+
+How Lambda function applies to map() & filter() functions?
+----------------------------------------------------------
+map() is a built in function used to apply a function to every item in an iterable (like list, tuple etc)
+filter() is used to filter elements from an iterable based on a condition(True or False)
+
+How do you sort a list in Python?
+--------------------------------
+a=[1,5,3,2,6]
+print(sorted(a))
+// [1,2,3,4,5,6]
+
+Is python asynchronous or Synchronous? What is the default type? and what is asyncio?
+-------------------------------------------------------------------------------------
+Its both , but by default it is synchronous
+synchronous : it executes line by line (in a sequential way)
+
+Why is the Self convention used in Python? Explain with an example.
+------------------------------------------------------------------
+self is a convention that refers to current instance of the class.. if we have a method in the class
+self should be present.
+    self is used to access its own class variables and methods
+    super is used to access its parent class
+
+How do you reverse the elements of a list?
+-------------------------------------------
+a = [1,2,3,4,5]
+print(a[::-1])
+
+Explain the difference between @classmethod and instance methods.
+-----------------------------------------------------------------
+@classMethod: we can call without creating a object
+Instance Method: we must should create a object and need to call through obj
+
+What is the use of conftest.py file in Python pytest?
+-----------------------------------------------------
+conftest is used to define fixtures and hooks that are shared across multiple test files
+
+How do you execute only failed test cases in pytest?
+----------------------------------------------------
+pytest --last-failed
+
+How do you apply a custom marker to a test case in pytest?
+---------------------------------------------------------
+@pytest.mark.sanity:: It will only run the test which is specifically mentioned the annotation
+
+What is the Python “with” statement designed for?
+-------------------------------------------------
+with keyword used basically for exception handling, file creations and blocks
+
+How to Handle Exceptions in Python? Where does the finally keyword come into play with exceptions?
+--------------------------------------------------------------------------------------------------
+we will handle exceptions with try and except blocks
+if something wrong in try block , test will not fail it comes to except block
+
+finally keyword: this will execute complusory  with irrespective of try and except
+
+
